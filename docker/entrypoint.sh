@@ -7,4 +7,6 @@ chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache /var/www/da
 chmod -R 775 /var/www/storage /var/www/bootstrap/cache
 chmod 664 /var/www/database/database.sqlite 2>/dev/null || true
 
+php /var/www/artisan view:clear --quiet 2>/dev/null || true
+
 exec docker-php-entrypoint "$@"
