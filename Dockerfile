@@ -2,7 +2,7 @@ FROM php:8.4-fpm-alpine
 
 RUN apk add --no-cache \
         nodejs npm \
-        libpng-dev libzip-dev zip unzip curl \
+        libpng-dev libzip-dev sqlite-dev zip unzip curl \
     && docker-php-ext-install pdo_sqlite pdo zip gd opcache
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
