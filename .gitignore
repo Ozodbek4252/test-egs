@@ -23,3 +23,20 @@ yarn-error.log
 /.vscode
 /.zed
 /database/database.sqlite
+
+# Storage runtime directories — keep structure via .gitkeep, ignore contents
+/storage/app/private/*
+/storage/app/public/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/storage/framework/compiled.php
+/storage/framework/config.php
+/storage/framework/down
+/storage/framework/maintenance.php
+/storage/framework/routes.php
+/storage/framework/schedule-*
+/storage/framework/services.json
+!**/.gitkeep

@@ -26,9 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->configureDefaults();
 
-        Blaze::optimize()
-            ->in(resource_path('views/livewire'))
-            ->in(resource_path('views/pages'));
+        Blaze::optimize();
     }
 
     /**
